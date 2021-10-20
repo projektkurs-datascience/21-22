@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Was bringt Ihnen Git und Github?</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.10/header-attrs.js"></script>
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="style/css/uni-ulm.css" type="text/css" />
+    <link rel="stylesheet" href="style/css/my-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Was bringt Ihnen Git und Github?
+
+---
+
+
+
+
+
+&lt;style type="text/css"&gt;
+.remark-code{line-height: 1.5; font-size: 80%}
+@media print {
+  .has-continuation {
+    display: block;
+  }
+}
+&lt;/style&gt;
+
+
+## An einer Projektarbeit arbeiten
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als **"Projektausarbeitung.Rmd"**
+
+]
+
+---
+
+## An einer Projektarbeit arbeiten
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+*# ... Code noch einmal Überarbeiten
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung.Rmd"
+- **"Projektausarbeitung.Rmd"** überschrieben
+
+]
+
+---
+
+## An einer Projektarbeit arbeiten
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+# ... Code noch einmal Überarbeiten
+
+*# ... Deskriptive Statistiken anfertigen
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung.Rmd"
+- "Projektausarbeitung.Rmd" überschrieben
+- **"Projektausarbeitung.Rmd"** überschrieben
+
+]
+
+---
+
+## An einer Projektarbeit arbeiten
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+*# ... überarbeiteten Code noch einmal Überarbeiten
+
+# ... Deskriptive Statistiken anfertigen
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung.Rmd"
+- "Projektausarbeitung.Rmd" überschrieben
+- "Projektausarbeitung.Rmd" überschrieben
+- **"Projektausarbeitung.Rmd"** noch einmal mit den Überarbeitungen überschrieben
+
+]
+
+---
+
+## An einer Projektarbeit arbeiten
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+# ... überarbeiteten Code noch einmal Überarbeiten
+
+*# ... Modifizierter Code zerstört die deskriptiven Statistiken!
+*# ... vorherige Version war besser -&gt; neu Coden!
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung.Rmd"
+- "Projektausarbeitung.Rmd" überschrieben
+- "Projektausarbeitung.Rmd"  überschrieben
+- "Projektausarbeitung.Rmd" noch einmal mit den Überarbeitungen überschrieben
+- **Modifikationen** wieder von Hand **rückgängig machen** 
+
+]
+
+---
+
+## An einer Projektarbeit arbeiten
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+# ... überarbeiteten Code noch einmal Überarbeiten
+
+*# ... Modifizierter Code zerstört die deskriptiven Statistiken!
+*# ... vorherige Version war besser -&gt; neu Coden!
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung.Rmd"
+- "Projektausarbeitung.Rmd" überschrieben
+- "Projektausarbeitung.Rmd"  überschrieben
+- "Projektausarbeitung.Rmd" noch einmal mit den Überarbeitungen überschrieben
+- Modifikationen wieder von Hand rückgängig machen 😥
+
+]
+
+---
+
+## Verschiedene Versionen abspeichern
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als **"Projektausarbeitung_01.Rmd"**
+
+]
+
+---
+
+## Verschiedene Versionen abspeichern
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+# ... überarbeiteten Code noch einmal Überarbeiten
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung_01.Rmd"
+- Abspeichern als **"Projektausarbeitung_02.Rmd"**
+]
+
+---
+
+## Verschiedene Versionen abspeichern
+
+.pull-left[
+**Projektdatei in RMarkdown**
+
+
+```r
+#Hier führen Sie Code aus
+library(readxl)
+
+einlesen &lt;- read_csv("mydata.csv")
+
+# ... Code zur Bearbeitung ihrer Projektarbeit
+
+# ... überarbeiteten Code noch einmal Überarbeiten
+
+*# ... Deskriptiven Statistiken erstellen
+```
+
+]
+
+.pull-right[
+**Bearbeitung ihrer Ausarbeitung:**
+
+- Abspeichern als "Projektausarbeitung_01.Rmd"
+- Abspeichern als "Projektausarbeitung_02.Rmd"
+- Abspeichern als **"Projektausarbeitung_03.Rmd"**
+
+]
+
+---
+
+class: inverse, center, middle
+
+# Sechs Monate später...
+
+---
+
+&lt;img src="./figs/comic.gif" width="40%" style="display: block; margin: auto;" /&gt;
+
+Quelle: http://phdcomics.com/comics/archive/phd101212s.gif
+
+---
+
+## Verschiedene Versionen abspeichern
+
+.pull-left[
+- Weiterarbeiten am Projekt
+- Projekt mit neuen Daten updaten
+- Einen Fehler korrigieren
+]
+
+.pull-right[
+**Welche Datei war nochmal die richtige?**
+
+- "Projektausarbeitung_final.Rmd"
+- "Projektausarbeitung_final0.Rmd"
+- "Projektausarbeitung_last.Rmd"
+- "Projektausarbeitung_last_korrigiert.Rmd"
+- ...
+
+]
+
+---
+
+## Achtung: **Nicht** Versionsname + Speicherdatum verwenden!
+
+- Versionsname + Speicherdatum sind nicht eindeutig
+  - Wurde das Dokument als letztes gespeichert oder nur kurz geöffnet?
+  - Haben Sie eventuell zuvor schon die falsche Datei bearbeitet?
+  - Wurde eventuell sogar die tatsächlich letzte Datei gelöscht?
+
+--
+- Andere Probleme:
+  - Was hat sich zwischen den Versionen geändert?
+  - Was sollte noch gemacht werden?
+  - Es können nicht mehrere Personen am gleichen Dokument arbeiten
+  
+---
+
+class: inverse, center, middle
+
+# Hier kommt Git und Github ins Spiel
+
+---
+
+## Git und Github
+
+- Sie arbeiten immer an **einer** Datei
+- Mehrere Personen können gleichzeitg an der Datei arbeiten
+  - D.h. Projekte können gemeinsam bearbeitet werden
+
+.alert[In diesem Projektkurs setzen wir auf Github Desktop um ihnen den Einstieg in Git und Github zu erleichtern!]
+
+--
+
+## Github Desktop 
+
+[Für wen ist Github Desktop?](https://github.com/desktop/desktop/blob/development/docs/process/what-is-desktop.md#3-github-desktop-prioritizes-workflows-for-beginners-and-collaborative-teams)
+
+- Für Personen die neu mit Git in Berührung kommen
+- Für die Bearbeitung gemeinsamer Projekte über eine Oberfläche
+
+.instructions[Unsere Videos zu Github Desktop und das Arbeiten mit Git sollten Sie sich unbedingt anschauen!]
+
+---
+
+## Quellen
+
+Ausarbeitung inspiriert von 
+
+- https://github.com/saghirb/Getting-Started-with-Git-and-GitHub-for-R-Users
+- [Happy Git with R](https://happygitwithr.com/)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "atelier-forest-light",
+"highlightLanguage": ["r", "yaml", "markdown"],
+"slideNumberFormat": "",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

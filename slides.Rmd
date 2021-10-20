@@ -1,0 +1,80 @@
+---
+title: "Folien für Lehrvideos und Live-Veranstaltungen"
+output: html_document
+---
+
+```{r setup, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(error = TRUE, comment = NA, warnings = FALSE, errors = FALSE, messages = FALSE, tidy = FALSE, echo = FALSE)
+```
+
+Die folgenden Bücher sind **kostenfrei**, können **online** gelesen werden und dienen als Referenz für Themengebiete im Projektkurs
+
+- Modern Dive: http://moderndive.com
+- R for Data Science: http://r4ds.had.co.nz
+- Introduction to Data Science: https://rafalab.github.io/dsbook/
+- Causal Inference: The Mixtape: https://mixtape.scunning.com/index.html
+
+
+## Folien der Lehrvideos {.tabset}
+
+[Folien als PDF herunterladen](pdf_downloads.html)
+
+<br></br>
+
+### 01: RMarkdown
+
+```{r}
+knitr::include_url("slides/rmarkdown.html")
+```
+
+- R for Data Science, Workflow: http://r4ds.had.co.nz/workflow-basics.html
+
+- Modern Dive, Kapitel zu Getting Started: http://moderndive.com/2-getting-started.html
+
+- R & RStudio Basics: https://bookdown.org/chesterismay/rbasics/3-rstudiobasics.html
+
+- RStudio IDE Cheatsheet: https://github.com/rstudio/cheatsheets/blob/master/rstudio-ide.pdf
+
+
+### 02: Datentypen in R
+
+```{r}
+knitr::include_url("slides/data-types.html")
+```
+
+
+### 03: Warum Git und Github?
+
+```{r}
+knitr::include_url("slides/Vorteile_Git-und-Github.html")
+```
+
+- Happy Git with R: http://happygitwithr.com/
+
+- Try Git tutorial: https://try.github.io/levels/1/challenges/1
+
+- Introduction to Data Science: https://rafalab.github.io/dsbook/git.html (Kapitel 39)
+
+### 04: Programming Basics
+
+```{r}
+knitr::include_url("slides/programming-basics.html")
+```
+
+- Introduction to Data Science: https://rafalab.github.io/dsbook/programming-basics.html
+
+### 05: Vektorarithmetik
+
+```{r}
+knitr::include_url("slides/vector-arithmetics.html")
+```
+
+
+## Vorlesungsfolien der Live-Veranstaltungen {.tabset}
+
+### 01: Einführung und Begrüßung
+
+```{r}
+knitr::include_url("slides/intro_projektkurs_data-science.html")
+```
+

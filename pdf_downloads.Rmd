@@ -1,0 +1,18 @@
+---
+title: "Folien als PDFs"
+output: html_document
+---
+
+Hier finden Sie Folien als PDFs zum Download:
+
+# Lehrvideos
+
+- [Einführung zu RMarkdown](slides/rmarkdown.pdf)
+- [Datentypen in R](slides/data-types.pdf)
+- [Wieso Git und Github](slides/Vorteile_Git-und-Github.pdf)
+- [Programming Basics](slides/programming-basics.pdf)
+- [Vektorarithmetik](slides/vector-arithmetics.pdf)
+
+# Vorlesungen
+
+- [Einführungsveranstaltung](slides/intro_projektkurs_data-science.pdf)
