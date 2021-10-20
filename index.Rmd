@@ -16,7 +16,7 @@ Lerninhalte der Veranstaltung sind: Tiefgreifende, praktische Erfahrungen in der
 
 - [Die Folien zur Veranstaltung und den Lehrvideos finden Sie hier](slides.html)
 - [Die Vorlesungsbegleitende Case-Study finden Sie hier](case-study-index.html)
-- [Die für die Veranstaltung zu bearbeitenden RTutor Problem Sets finden Sie hier](https://github.com/projektkurs-datascience/20-21/tree/main/problem-sets)
+- [Die für die Veranstaltung zu bearbeitenden RTutor Problem Sets finden Sie hier](https://github.com/projektkurs-datascience/21-22/tree/main/problem-sets)
 - Weitere Tutorials, wie z.B. die Installation von R und RStudio, Github Setup etc. finden Sie unter dem Reiter "Tutorials"
 
 # Download der Folien
