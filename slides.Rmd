@@ -69,6 +69,40 @@ knitr::include_url("slides/programming-basics.html")
 knitr::include_url("slides/vector-arithmetics.html")
 ```
 
+### 06: Daten in R importieren
+
+```{r}
+knitr::include_url("slides/import-data.html")
+```
+
+### 07: Daten in die richtige Form bringen
+
+```{r}
+knitr::include_url("slides/reshape-data.html")
+```
+
+- Blog Post wie Sie ihre Daten aufarbeiten können: https://rladiessydney.org/courses/ryouwithme/02-cleanitup-5/
+
+### 08: Einführung in die Datenaufbereitung
+
+```{r}
+knitr::include_url("slides/data-wrangling-intro.html")
+```
+
+
+### 09: Datensätze zusammenführen
+
+```{r}
+knitr::include_url("slides/combine-tables.html")
+```
+
+- Introduction to Data Science: https://rafalab.github.io/dsbook/joining-tables.html
+
+### 10: Datum und Uhrzeit in R
+
+```{r}
+knitr::include_url("slides/dates-and-time.html")
+```
 
 ## Vorlesungsfolien der Live-Veranstaltungen {.tabset}
 
