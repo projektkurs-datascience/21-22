@@ -112,3 +112,8 @@ knitr::include_url("slides/dates-and-time.html")
 knitr::include_url("slides/intro_projektkurs_data-science.html")
 ```
 
+### 02: Erster Teil der Case-Study 
+
+```{r}
+knitr::include_url("slides/VL_case-study-Teil1.html")
+```

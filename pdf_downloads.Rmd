@@ -21,3 +21,4 @@ Hier finden Sie Folien als PDFs zum Download:
 # Vorlesungen
 
 - [Einführungsveranstaltung](slides/intro_projektkurs_data-science.pdf)
+- [Case-Study Teil 1](slides/VL_case-study-Teil1.pdf)
