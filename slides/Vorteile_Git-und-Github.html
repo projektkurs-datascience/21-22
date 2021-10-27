@@ -387,6 +387,164 @@ Ausarbeitung inspiriert von
 
 - https://github.com/saghirb/Getting-Started-with-Git-and-GitHub-for-R-Users
 - [Happy Git with R](https://happygitwithr.com/)
+
+---
+
+## Zusammenfassung: Warum Git und Github?
+
+- **Code teilen:** Durch Github können Sie einfach ihre Arbeit mit anderen teilen. Auch ihrem späteren Arbeitgeber können Sie so zeigen, was Sie können
+- **Zusammenarbeit:** Wenn Sie ein zentrales Repositorium auf Github haben dann können viele Personen gleichzeitig an dem Projekt arbeiten. Dadurch ist jeder auf dem aktuellsten Stand. Durch sogenannte Pull-Requests können Anmerkungen gesendet werden, welche Änderungen am Code vorsehen. Sie können dann diese Anfragen annehmen oder ablehnen.
+- **Versionskontrolle:** Das Beste an Git ist dessen Versionierungsfähigkeit von unterschiedlichsten Dokumenten. Sie können jede beliebige Datei so oft speichern wie Sie möchten und immer wieder zu einem alten Speicherstand zurückkehren, falls Sie dies wünschen. Sie können auch sogenannte "branches" kreieren, bei denen Sie sich austoben und Dinge ausprobieren können und diese nachher zu "Main" zumergen.
+
+---
+
+## Git Commands
+
+Es gibt sehr viele Aktionen, welche Sie mit Git machen können, wir wollen uns hier auf die vier Hauptaktionen konzentrieren:
+
+- **pull**: Sie importieren (pull) Änderungen von dem _remote_ Repositorium (aka von Github)
+- **add**: Fügen Sie Dateien hinzu, dazu wird auch _stage_ gesagt
+- **commit**: Änderungen an ihrem _lokalen_ Repositorium
+- **push**: Überträgt die lokal gemachten Änderungen an das _remote_ Repositorium
+
+&lt;img src="./figs/git-layout.png" width="815" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+---
+
+## Clone
+
+- Sie können ein _Upstream Repository_ auf Github klonen
+    - Es wird die komplette Struktur geklont
+    - Wir können bspw. das RTutor Repositorium klonen
+    - Der Link hierzu: https://github.com/skranz/RTutor.git
+
+.alert[Siehe hierzu die Einführungsvideos zu Repositories klonen mit Github Desktop!]
+    
+&lt;img src="./figs/RTutor_git.png" width="40%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Clone
+
+- Sie haben soeben das komplette RTutor Repositorium auf ihren PC geklont!
+- Das _Working Directory_ ist ihr aktuelles Verzeichnis
+- Änderungen erfolgen immer _nur_ in ihrem aktuellen Verzeichnis!
+&lt;img src="./figs/git-clone.png" width="815" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+---
+
+## Status
+
+- Mit `git status` können Sie überprüfen, wie ihr aktueller Status ist über alle _areas_ ist
+- Haben Sie bereits Dateien geändert und müssen diese noch _committed_ werden?
+&lt;img src="./figs/git-status.png" width="816" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+---
+
+## Dateien hinzufügen
+
+- Änderungen die Sie an Dateien vornehmen wollen Sie tracken und versioniert sehen
+- **Doch:** Nicht jede kleinste Änderung soll in Github landen.
+    - In der Regel wollen Sie nur Änderungen mit Github synchronisieren welche es auch wert sind
+- Wenn Sie Änderungen in der _Staging area_, dann sind diese noch nicht in der Versionierung!
+
+**Beispiel:** Hinzufügen einer Datei zu unserem Repositorium. Z.B. einer leeren Daten mit dem Namen `Neu.txt`
+
+
+---
+
+## Stage
+
+&lt;img src="./figs/git-add.png" width="815" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+---
+
+## Commit
+
+Nun müssen Sie die neue Datei noch zu ihrem _lokalen Repositorium_ hinzufügen, dies machen Sie mit `git commit`
+
+- Sie sollten zu jedem Commit eine möglichst aussagekräftige Beschreibung dessen was Sie gemacht haben hinzufügen
+
+&gt; git commit -m "Hier ihre Beschreibung als Commit"
+
+--
+
+Sie haben nun ihr _lokales Repositorium_ geändert, dies können Sie mit `git status` nachvollziehen
+
+&lt;img src="./figs/git-commit.png" width="815" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+--
+
+Wenn Sie nun ihre Datei ändern, dann tun Sie dies wieder nur in ihrem aktuellen Verzeichnis, d.h. dem _Working Directory_
+
+.instructions[Änderungen müssen wieder committed werden!]
+
+---
+
+## Push
+
+Im letzten Schritt sollten Sie ihre Änderungen zu ihrem _remote Repositorium_ **pushen**:
+
+&lt;img src="./figs/git-push.png" width="815" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+---
+
+## Pull
+
+Das _remote Repositorium_ wird sich über die Zeit verändern, wenn mehrere Personen daran arbeiten.
+Sie sollten **immer**, d.h. jedes mal wenn Sie beginnen an ihrem Projekt zu arbeiten (z.B. jeden morgen) Änderungen vom _remote Repositorium_ **pullen**
+
+&lt;img src="./figs/git-pull.png" width="816" /&gt;
+
+.small[Quelle: https://rafalab.github.io/dsbook/git.html]
+
+
+---
+
+class: center, middle, inverse
+
+# Mergekonflikte
+
+---
+
+## Mergekonflikte
+
+- Können vorkommen, wenn mehrere Personen an der gleichen Datei arbeiten
+- Wenn beide die gleiche Zeile bearbeiten und die Datei an das _remote Repositorium_ pushen, dann meldet Git einen **Mergekonflikt**
+
+.question[Gegeben Sie und einer ihrer Partner arbeiten an der gleichen Zeile. Ihr Partner pushed seine Änderungen vor ihnen. Was passiert?]
+
+--
+
+- Git zeigt ihnen einen Fehler an
+- **Was ist zu tun?** `\(\rightarrow\)` pullen Sie!
+- Schauen Sie auf den Merge Konflikt
+- Wählen Sie die richtige/präferierte Änderung der Datei aus und bereinigen so den Mergekonflikt
+- Committen Sie ihre neue Datei mit einer entsprechenden Nachricht
+- Pushen Sie.
+
+---
+
+## Mergekonflikte vermeiden
+
+.instructions[**Pullen** Sie **immer** bevor Sie mit ihrer Arbeit starten, dann sind Sie auf dem aktuellen Stand!]
+
+- Committen und pushen Sie oft um Mergekonflikte zu vermeiden, oder die Änderungen auf ein Minimum zu reduzieren
+    - Erspart ihnen viel Arbeit!
+- Wenn Sie eine Situation nicht lösen können, dann fragen Sie **sofort** nach Hilfe und warten nicht bis das Problem zu groß wird!
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
