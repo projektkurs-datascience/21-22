@@ -17,7 +17,7 @@ Hier finden Sie Folien als PDFs zum Download:
 - [Einführung in die Datenaufbereitung](slides/data-wrangling-intro.pdf)
 - [Datensätze zusammenführen](slides/combine-tables.pdf)
 - [Datum und Uhrzeit](slides/dates-and-time.pdf)
-- [Einführung in ggplot](slides/visualisierung_mit_ggplot.pdf)
+- [Einführung in ggplot](slides/visualisierung_mit_ggplot2.pdf)
 - [Guidelines für die Visualisierung](slides/visualisierung-guidelines.pdf)
 
 # Vorlesungen
