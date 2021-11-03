@@ -125,7 +125,7 @@ Wie schon bei der Arbeitslosenquote und der Verschuldung sehen wir auch bei dem 
 
 ## Summary Statistics auf Bundeslandebene für die Arbeitslosigkeit
 
-Nachdem wir im vorherigen Abschnitt bereits gesehen haben, dass es wohl deutliche regionale Unterschiede bei allen Variablen geben muss, wollen wir uns nun noch die Arbeitslosenquote auf Bundeslandebene abschauen. Erinnern wir uns daran das wir hier Querschnittsdaten für das Jahr 2017 für alle deutschen Landkreise betrachten. Weiterhin hat uns die vorherige Tabelle bereits gezeigt, dass wir mit "missing Values" rechnen müssen (`n_missing` bei der skimr-Tabelle). Um nun einen ersten Überblick über die regionale Verteilung der Arbeitsenquote in 2017 zu gewinnen schauen wir uns die Arbeitslosenquote auf Bundeslandebene an, aggregiert über die Landkreise eines Bundeslandes. Hierzu wollen wir uns des Pakets `kableExtra` bedienen um schönere Tabellen zu erstellen:
+Nachdem wir im vorherigen Abschnitt bereits gesehen haben, dass es wohl deutliche regionale Unterschiede bei allen Variablen geben muss, wollen wir uns nun noch die Arbeitslosenquote auf Bundeslandebene anschauen. Erinnern wir uns daran das wir hier Querschnittsdaten für das Jahr 2017 für alle deutschen Landkreise betrachten. Weiterhin hat uns die vorherige Tabelle bereits gezeigt, dass wir mit "missing Values" rechnen müssen (`n_missing` bei der skimr-Tabelle). Um nun einen ersten Überblick über die regionale Verteilung der Arbeitsenquote in 2017 zu gewinnen schauen wir uns die Arbeitslosenquote auf Bundeslandebene an, aggregiert über die Landkreise eines Bundeslandes. Hierzu wollen wir uns des Pakets `kableExtra` bedienen um schönere Tabellen zu erstellen:
 
 ```{r}
 bula_data <- gesamtdaten %>% 
@@ -158,7 +158,7 @@ gesamtdaten <- gesamtdaten %>%
           ost_name = ifelse(ost == 1, "Ostdeutschland", "Westdeutschland"))
 ```
 
-Durch diese Aufteilung treten die Unterschiede in der Arbeitslosenquote zwischen den ehemaligen ost- und westdeutschen Landkreisen besonders stark zutage. Insbesondere wenn wir uns die Quantile anschauen: Im **25% Quantil** in **Ostdeutschland** ist die Arbeitslosenquote bei **6,00%**, in **Westdeutschland** ist das **75% Quantil** bei einer Arbeitslosenquote von **6,17%**!
+Durch diese Aufteilung treten die Unterschiede in der Arbeitslosenquote zwischen den ehemaligen ost- und westdeutschen Landkreisen besonders stark zutage. Insbesondere wenn wir uns die Quantile anschauen: Im **25% Quantil** in **Ostdeutschland** ist die Arbeitslosenquote bei **6,04%**, in **Westdeutschland** ist das **75% Quantil** bei einer Arbeitslosenquote von **6,22%**!
 
 ```{r}
 gesamtdaten %>%
@@ -210,7 +210,7 @@ Für alle Bundesländer in denen wir niedrige Arbeitslosenquoten pro Landkreis h
 Allein durch den Mittelwert und die Standardabweichung konnten wir bereits sehr viel über unsere Daten lernen und haben hier schon einige deutliche Unterschiede zwischen ostdeutschen und westdeutschen Landkreisen feststellen können.
 
 Wir können in deskriptiven Statistiken nun nicht nur Ouerschnittsdaten für ein bestimmtes Jahr betrachten, sondern auch Paneldaten analysieren.
-Hierbei können wir den Mittelwert und die Standardabweichung über den kompletten Datensatz bilden, wie in der Querschnittsdaten, oder wir können Trends in den Daten beschreiben. Eine solche Trendanalyse wollen wir mit der folgenden Tabelle unternehmen. Dieses mal nehmen wir für unsere Analyse das Paket `gt`.
+Hierbei können wir den Mittelwert und die Standardabweichung über den kompletten Datensatz bilden, wie in den Querschnittsdaten, oder wir können Trends in den Daten beschreiben. Eine solche Trendanalyse wollen wir mit der folgenden Tabelle unternehmen. Dieses mal nehmen wir für unsere Analyse das Paket `gt`.
 
 ```{r}
 
@@ -261,8 +261,8 @@ bip_daten %>%
 ```
 
 
-Auch in dieser Tabelle treten die Unterschiede zwischen westdeutschen und ostdeutschen Landkreisen zutage. Während die westdeutschen Landkreise bereits im Jahr 1992 ein BIP pro Kopf von durchschnittlich über 20 000€ aufweisen konnten hatten viele ostdeutsche Landkreise diese Schwelle noch nicht einmal im Jahr 2005 erreicht. 
-Jedoch gibt es seit dem Jahr 1992 einen Aufholprozess der ostdeutschen Landkreise an die westdeutschen Landkreise. Dieser Prozess fand jedoch hauptsächlich in den Jahren direkt nach der Wende statt. Z.B. war das durchschnittliche BIP pro Kopf in den Landkreisen in Thüringen im Jahr 1992 nur 34,8% des durchschnittlichen BIP pro Kopf der Landkreise in Baden-Württemberg. In 2005 kletterte der Anteil bereits auf 58,3% und in 2017 liegt er bei 64,0%. Durch die Ergebnisse unserer Tabelle bestäkrt könnten wir vermuten das die Erneuerung der Infrastruktur und der Ansiedlung neuer Industriezweige in den ostdeutschen Landkreisen zu einem schnelleren Wachstum dieser Landkreise direkt nach der Wende und in den 1990er Jahren geführt hat. Dieses Wachstum hat sich jedoch in den letzten Jahren deutlich verlangsamt und es kommt nur noch zu einer sehr moderaten Anpassung des BIP pro Kopf.
+Auch in dieser Tabelle treten die Unterschiede zwischen westdeutschen und ostdeutschen Landkreisen zutage. Während die westdeutschen Landkreise bereits im Jahr 1992 ein BIP pro Kopf von durchschnittlich über 20 000€ aufweisen konnten, hatten viele ostdeutsche Landkreise diese Schwelle noch nicht einmal im Jahr 2005 erreicht. 
+Jedoch gibt es seit dem Jahr 1992 einen Aufholprozess der ostdeutschen Landkreise an die westdeutschen Landkreise. Dieser Prozess fand jedoch hauptsächlich in den Jahren direkt nach der Wende statt. Z.B. war das durchschnittliche BIP pro Kopf in den Landkreisen in Thüringen im Jahr 1992 nur 34,8% des durchschnittlichen BIP pro Kopf der Landkreise in Baden-Württemberg. In 2005 kletterte der Anteil bereits auf 58,3% und in 2017 liegt er bei 64,0%. Durch die Ergebnisse unserer Tabelle bestärkt, könnten wir vermuten das die Erneuerung der Infrastruktur und der Ansiedlung neuer Industriezweige in den ostdeutschen Landkreisen zu einem schnelleren Wachstum dieser Landkreise direkt nach der Wende und in den 1990er Jahren geführt hat. Dieses Wachstum hat sich jedoch in den letzten Jahren deutlich verlangsamt und es kommt nur noch zu einer sehr moderaten Anpassung des BIP pro Kopf.
 
 ## Visualisierung der Unterschiede
 
@@ -383,7 +383,7 @@ plot_bip
 
 Das Niveau des BIP pro Kopf ist in den ostdeutschen Bundesländern deutlich niedriger als in den westdeutschen. Insbesondere wenn wir uns die logarithmische Skalierung der y-Achse anschauen, so können wir doch deutliche Unterschiede erkennen. Beispielsweise ist das durchschnittliche BIP pro Kopf im ehemaligen Ostdeutschland mit 28338€ in 2017 so hoch wie in Westdeutschland im Jahr 2006 (zu diesem Zeitpunkt lag das durchschnittliche BIP pro Kopf in Westdeutschland bei 29019€)!
 
-In der oben dargestellten Grafik sehen wir keinen großen Anpassungsprozess seit dem Jahr 2000 der ostdeutschen Landkreise an die westdeutschen Landkreise was das BIP pro Kopf anbelangt. Nichtsdestotrotz kann es insbesondere in den 1990er Jahren zu einer schnellen Aufholjagt der ostdeutschen Landkreise gekommen sein auf Grund der hohen Investitionen und Infrastrukturausgaben nach der Wende. Dafür müssen wir mit unserer Analyse noch etwas weiter zurück gehen, was jedoch dazu führt, das wir nicht mehr alle Landkreise in unseren Beobachtungen enthalten haben. Für einige Landkreise haben wir erst Daten ab 2000, was wir bei der Interpretation der folgenden Grafik beachten sollten:
+In der oben dargestellten Grafik sehen wir keinen großen Anpassungsprozess seit dem Jahr 2000 der ostdeutschen Landkreise an die westdeutschen Landkreise was das BIP pro Kopf anbelangt. Nichtsdestotrotz kann es insbesondere in den 1990er Jahren zu einer schnellen Aufholjagd der ostdeutschen Landkreise gekommen sein auf Grund der hohen Investitionen und Infrastrukturausgaben nach der Wende. Dafür müssen wir mit unserer Analyse noch etwas weiter zurück gehen, was jedoch dazu führt, das wir nicht mehr alle Landkreise in unseren Beobachtungen enthalten haben. Für einige Landkreise haben wir erst Daten ab 2000, was wir bei der Interpretation der folgenden Grafik beachten sollten:
 
 ```{r}
 bip_zeitreihe_namen %>%
@@ -407,9 +407,10 @@ bip_zeitreihe_namen %>%
   geom_curve(aes(x = 1995, xend = 1997, y = 29000, yend = 25000), curvature = .2, color = "#0072B2", size = 0.1)
 
 ```
-Wie wir aus der Grafik deutlich sehen können hatten die ostdeutschen Landkreise zu Beginn der 1990er Jahre einen deutlich steileren Wachstumspfad als die westdeutschen Landkreise. Für mache ostdeutschen Landkreise haben wir hier keine Information seit 1992, jedoch deutet das Bild schon sehr stark darauf hin, dass es in den ersten Jahren nach der Wende einen starken Anpassungsprozess gegeben hat mit hohen Wachstumsraten des BIP pro Kopf. Dieser hat jedoch mitte der 1990 Jahre etwas an Fahrt verloren und ab dem Jahr 2010 bewegen sich die zwei Linien praktisch parallel zueinander. D.h. hier sehen wir keine weitere Anpassung der ostdeutschen Landkreise an die westdeutschen Landkreise mehr. Einen ähnlichen Schluss hatten wir bereits bei der Analyse der `gt` Tabelle im Abschnitt zu den deskriptiven Tabellen gesehen. 
 
-Eine weitere Möglichkeit die Wachstumspfade zu visualisieren wäre mit sogenannten "small multiples". Hierdurch können wir die Aufmerksamkeit auf den Wachstumspfad richten und ignorieren dabei die Höhe des Startwertes. Wir wollen für diese uns alle folgenden Analysen die Daten wieder ab dem Jahr 2000 heranziehen. Insbesondere da ab diesem Zeitpunkt Daten für alle Landkreise verfügbar sind.
+Wie wir aus der Grafik deutlich sehen können hatten die ostdeutschen Landkreise zu Beginn der 1990er Jahre einen deutlich steileren Wachstumspfad als die westdeutschen Landkreise. Für manche ostdeutschen Landkreise haben wir leider keine Information ab 1992, jedoch deutet das Bild schon sehr stark darauf hin, dass es in den ersten Jahren nach der Wende einen starken Anpassungsprozess gegeben hat mit hohen Wachstumsraten des BIP pro Kopf. Dieser hat jedoch Mitte der 1990 Jahre etwas an Fahrt verloren und ab dem Jahr 2010 liegen ost- und westdeutsche Landkreise praktisch auf dem gleichen Wachstumspfad. D.h. hier sehen wir keine weitere Anpassung der ostdeutschen Landkreise an die westdeutschen Landkreise mehr. Einen ähnlichen Schluss hatten wir bereits bei der Analyse der `gt` Tabelle im Abschnitt zu den deskriptiven Tabellen gesehen. 
+
+Eine weitere Möglichkeit die Wachstumspfade zu visualisieren wäre mit sogenannten "small multiples". Hierdurch können wir die Aufmerksamkeit auf den Wachstumspfad richten und ignorieren dabei die Höhe des Startwertes. Für diese und alle nun folgenden Analysen wollen wir uns nun wieder die Daten ab dem Jahr 2000 anschauen. Hintergrund ist, dass ab diesem Zeitpunkt Daten für alle Landkreise verfügbar sind.
 
 ```{r}
 
@@ -467,7 +468,7 @@ Insgesamt haben ost- und westdeutsche Landkreise im Durchschnitt eine sehr ähnl
 
 Durch die vorherigen Schaubilder sehen wir, dass die Unterschiede zwischen den ost- und westdeutschen Landkreisen schon lange bestehen (mind. seit 2000) und das es keine große Annäherung der ostdeutschen Landkreise an das westdeutsche BIP pro Kopf nach dem Jahr 2000 gibt. Die Wachstumspfade sind hierfür zu ähnlich. Direkt nach der Wende war dies anders, zu diesem Zeitpunkt waren die Wachstumspfade der ostdeutschen Landkreise deutlich höher als die der westdeutschen. In der Übungsaufgabe beschäftigen Sie sich mit dem Einkommen auf Landkreisebene und können dort nachvollziehen, ob der Trend bei den Einkommen der Gleiche ist wie bei dem BIP pro Kopf!
 
-Wenn wir uns nur auf das Jahr 2017 beschränken, so sehen wir auch hier im BIP pro Kopf deutliche Unterschiede. Im folgenden Schaubild ist die Verteilung des BIP pro Kopf über alle Landkreise für Ost- und Westdeutschland im Jahr 2017 abgetragen bei denen das BIP pro Kopf unter 100 000€ lag. Zusätzlich sind die jeweiligen Mittelwerte des BIP pro Kopf für ost- und westdeutsche Landkreisein blau eingezeichnet. Zum Einen können wir uns die Verteilung des BIP pro Kopf gut durch ein Histogramm anzeigen lassen, wobei die "binwidth", d.h. die Dicke eines Balkens, auf 1000€ gesetzt wurde. Dies bedeutet, das alle Beobachtungen innerhalb von 1000€ zusammengefasst in einem Balken dargestellt werden. Z.B. gibt es 10 Landkreise in Westdeutschland, die ein BIP pro Kopf zwischen 26000€ - 27000€ ausweisen (siehe Schaubild).
+Wenn wir uns nur auf das Jahr 2017 beschränken, so sehen wir auch hier im BIP pro Kopf deutliche Unterschiede. Im folgenden Schaubild ist die Verteilung des BIP pro Kopf über alle Landkreise für Ost- und Westdeutschland im Jahr 2017 abgetragen bei denen das BIP pro Kopf unter 100 000€ lag. Zusätzlich sind die jeweiligen Mittelwerte des BIP pro Kopf für ost- und westdeutsche Landkreise in blau eingezeichnet. Zum Einen können wir uns die Verteilung des BIP pro Kopf gut durch ein Histogramm anzeigen lassen, wobei die "binwidth", d.h. die Dicke eines Balkens, auf 1000€ gesetzt wurde. Dies bedeutet, das alle Beobachtungen innerhalb von 1000€ zusammengefasst in einem Balken dargestellt werden. Z.B. gibt es 10 Landkreise in Westdeutschland, die ein BIP pro Kopf zwischen 26000€ - 27000€ ausweisen (siehe Schaubild).
 
 ```{r}
 gesamtdaten %>%

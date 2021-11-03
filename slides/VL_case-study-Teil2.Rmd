@@ -712,8 +712,8 @@ Große Unterschiede werden sichtbar:
 - Fast 3 Prozentpunkte niedriger in den Landkreisen der westdeutschen Bundesländer
 - Die Standardabweichung ist vergleichbar
 - Der Median liegt in den westdeutschen Landkreisen sogar noch deutlicher unter dem Mittelwert als in ostdeutschen
-- Im **25% Quantil** in den **ostdeutschen Landkreisen** ist die Arbeitslosenquote bei **6,00%**
-- Bei den **westdeutschen Landkreisen** ist das **75% Quantil** bei einer Arbeitslosenquote von **6,17%**!
+- Im **25% Quantil** in den **ostdeutschen Landkreisen** ist die Arbeitslosenquote bei **6,04%**
+- Bei den **westdeutschen Landkreisen** ist das **75% Quantil** bei einer Arbeitslosenquote von **6,22%**!
 
 ---
 
