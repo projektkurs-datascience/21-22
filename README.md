@@ -31,10 +31,10 @@ For more Problem Sets and a thourough description of RTutor visit: https://githu
 
 ## Running the Problem Sets in RStudio Cloud
 
-[Julius Düker](https://github.com/juduke/) made some introduction videos detailing 
+[Julius Düker](https://github.com/juduke/) made some introduction videos detailing
 
-- [How to run an interactive Problem set in the Browser using RStudio Cloud](https://cloudstore.uni-ulm.de/s/crmztKk4Ds4DKFm)
-- [How to run an interactive Problem Set in RMarkdown using RStudio Cloud](https://cloudstore.uni-ulm.de/s/wSRRcwzax53nCbt)
+- [How to run an interactive Problem set in the Browser using RStudio Cloud](https://cloudstore.uni-ulm.de/s/sbi8x8cjZtpn3q7)
+- [How to run an interactive Problem Set in RMarkdown using RStudio Cloud](https://cloudstore.uni-ulm.de/s/sNxyBpB7Q9tZCzP)
 
 # License
 
