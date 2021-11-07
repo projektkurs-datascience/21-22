@@ -33,6 +33,12 @@ navbar:
         href: ./tutorials/Fragen-im-Forum.html
       - text: "Tutorial zu Git und Github"
         href: ./tutorials/Git-und-Github.html
+      - text: "Leitlinien zur Projektausarbeitung"
+        href: ./tutorials/Leitlinien_zur_Projektabgabe.html
+      - text: "Review Reports erstellen"
+        href: ./tutorials/Review_Reports.html
+      - text: "Feedback zu den Review Report"
+        href: ./tutorials/Gruppenfeedback.html
       - text: "Cheatsheets"
         href: https://rstudio.com/resources/cheatsheets/
   - text: Moodle WiSe
