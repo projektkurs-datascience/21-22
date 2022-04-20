@@ -3,7 +3,7 @@ output_dir: '.'
 navbar:
   title: Data Science & Business Analytics
   left:
-  - text: Folien 
+  - text: Folien
     icon: fa-home
     href: slides.html
   - text: Case-Study
@@ -13,7 +13,7 @@ navbar:
       - text: "Erster Teil der Case-Study"
         href: ./case-study/case_study_germany_1.html
       - text: "Zweiter Teil der Case-Study"
-        href: ./case-study/case_study_germany_2.html 
+        href: ./case-study/case_study_germany_2.html
   - text: RTutor-Problem-Sets
     menu:
       - text: "Problem Set 1"
@@ -22,6 +22,8 @@ navbar:
         href: https://github.com/projektkurs-datascience/21-22/tree/main/problem-sets/ps2
       - text: "Problem Set 3"
         href: https://github.com/projektkurs-datascience/21-22/tree/main/problem-sets/ps3
+      - text: "Problem Set 4"
+        href: https://github.com/projektkurs-datascience/21-22/tree/main/problem-sets/ps4
   - text: Tutorials
     icon: fa-users
     menu:
@@ -43,6 +45,8 @@ navbar:
         href: https://rstudio.com/resources/cheatsheets/
   - text: Moodle WiSe
     href: https://moodle.uni-ulm.de/course/view.php?id=23708
+  - text: Moodle SoSe
+    href: https://moodle.uni-ulm.de/course/view.php?id=27199
   right:
   - icon: fa-github fa-lg
     href: https://github.com/projektkurs-datascience/21-22

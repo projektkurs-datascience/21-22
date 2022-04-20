@@ -175,3 +175,8 @@ knitr::include_url("slides/VL_case-study-Teil1.html")
 knitr::include_url("slides/VL_case-study-Teil2.html")
 ```
 
+### 04: Einführung und Begrüßung zum 2. Teil der VL
+
+```{r}
+knitr::include_url("slides/intro_projektkurs_data-science2.html")
+```
