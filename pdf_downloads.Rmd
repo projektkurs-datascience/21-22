@@ -30,3 +30,5 @@ Hier finden Sie Folien als PDFs zum Download:
 - [Case-Study Teil 2](slides/VL_case-study-Teil2.pdf)
 - [Einführungsveranstaltung zum 2. Teil](slides/intro_projektkurs_data-science2.pdf)
 - [Wahrscheinlichkeiten und Konfidenzintervalle](slides/probability-and-confidence-interval.pdf)
+- [Inferenzstatistik](slides/inference.pdf)
+- [Lineare Regression](slides/linear-regression.pdf)

@@ -186,3 +186,17 @@ knitr::include_url("slides/intro_projektkurs_data-science2.html")
 ```{r}
 knitr::include_url("slides/probability-and-confidence-interval.html")
 ```
+
+### 06: Inferenzstatistik (Hypothestest)
+
+```{r}
+knitr::include_url("slides/inference.html")
+```
+
+### 07: Lineare Regression (inkl. Interaktionsterme)
+
+```{r}
+knitr::include_url("slides/linear-regression.html")
+```
+
+- Zur schönen Darstellung der Regressionsergebnisse verwenden wir das Paket _modelsummary_: Arel-Bundock V (2022). modelsummary: Summary Tables and Plots for Statistical Models and Data: Beautiful, Customizable, and Publication-Ready. R package version 0.10.0.9000, https://vincentarelbundock.github.io/modelsummary/. 
