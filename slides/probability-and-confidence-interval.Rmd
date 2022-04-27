@@ -910,7 +910,7 @@ bootstrap
 ## Bootstrap
 
 **Ausgangslage:**
-- Eine Stichprobe von 20 roten und 30 weiße Kugeln
+- Eine Stichprobe von 17 roten und 33 weiße Kugeln
 - Was Sie gerne hätten wäre die Grundgesamtheit:
 
 --
