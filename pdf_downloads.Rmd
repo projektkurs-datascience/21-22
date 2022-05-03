@@ -22,6 +22,7 @@ Hier finden Sie Folien als PDFs zum Download:
 - [Korrelation](slides/correlation.pdf)
 - [Advanced R Markdown](slides/advanced_rmarkdown.pdf)
 - [Stichprobe vs. Grundgesamtheit](slides/sample-vs-population.pdf)
+- [Koeffizienten Interpretieren](slides/koeffizienten_interpretieren.pdf)
 
 # Vorlesungen
 
@@ -32,3 +33,4 @@ Hier finden Sie Folien als PDFs zum Download:
 - [Wahrscheinlichkeiten und Konfidenzintervalle](slides/probability-and-confidence-interval.pdf)
 - [Inferenzstatistik](slides/inference.pdf)
 - [Lineare Regression](slides/linear-regression.pdf)
+- [Case-Study Teil 3](slides/vl_case-study-teil3.pdf)

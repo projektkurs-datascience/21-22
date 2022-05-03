@@ -200,3 +200,12 @@ knitr::include_url("slides/linear-regression.html")
 ```
 
 - Zur schönen Darstellung der Regressionsergebnisse verwenden wir das Paket _modelsummary_: Arel-Bundock V (2022). modelsummary: Summary Tables and Plots for Statistical Models and Data: Beautiful, Customizable, and Publication-Ready. R package version 0.10.0.9000, https://vincentarelbundock.github.io/modelsummary/. 
+- Ein weiteres Paket zur Datstellung der Regressionsergebnisse ist das Paket _stargazer_: Hlavac, Marek. 2018. stargazer: Well-Formatted Regression and Summary Statistics Tables (version 5.2.2).
+
+### 08: Dritter Teil der Case-Study 
+
+```{r}
+knitr::include_url("slides/VL_case-study-Teil3.html")
+```
+
+
