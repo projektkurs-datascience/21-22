@@ -49,6 +49,8 @@ navbar:
         href: ./tutorials/Review_Reports.html
       - text: "Feedback zu den Review Report"
         href: ./tutorials/Gruppenfeedback.html
+      - text: "WebScraping Tutorial"
+        href: ./tutorials/rvest.html
       - text: "Cheatsheets"
         href: https://rstudio.com/resources/cheatsheets/
   - text: Moodle WiSe
